@@ -1,0 +1,73 @@
+﻿  Uic'ing dialogaddressinput.ui...
+  Moc'ing database\databaseresource.h...
+  Moc'ing dialogaddressinput.h...
+  Moc'ing smartlink\st_client_table.h...
+  Moc'ing smartlink\st_clientnode_applayer.h...
+  Moc'ing smartlink\st_clientnode_basetrans.h...
+  Moc'ing smartlink\st_cross_svr_node.h...
+  Moc'ing logger\st_logger.h...
+  Moc'ing cluster\zp_clusternode.h...
+  Moc'ing cluster\zp_clusterterm.h...
+  Moc'ing network\zp_net_threadpool.h...
+  Moc'ing network\zp_netlistenthread.h...
+  Moc'ing network\zp_nettransthread.h...
+  Moc'ing pipeline\zp_pipeline.h...
+  Moc'ing pipeline\zp_pltaskbase.h...
+  Moc'ing pipeline\zp_plworkingthread.h...
+  Moc'ing network\zp_tcpserver.h...
+  Moc'ing zpmainframe.h...
+  databaseresource.cpp
+  dialogaddressinput.cpp
+  main.cpp
+  st_client_table.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 main.cpp)
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 smartlink\st_client_table.cpp)
+  st_clientnode_app_imp.cpp
+  st_clientnode_applayer.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 smartlink\st_clientnode_app_imp.cpp)
+  st_clientnode_basetrans.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 smartlink\st_clientnode_applayer.cpp)
+  st_cross_svr_node.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 smartlink\st_clientnode_basetrans.cpp)
+  st_logger.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 smartlink\st_cross_svr_node.cpp)
+  zp_clusternode.cpp
+logger\st_logger.cpp(41): warning C4100: “app”: 未引用的形参
+  zp_clusterterm.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 cluster\zp_clusternode.cpp)
+cluster\zp_clusternode.cpp(189): warning C4189: “parsed”: 局部变量已初始化但不引用
+  zp_net_threadpool.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 cluster\zp_clusterterm.cpp)
+  zp_netlistenthread.cpp
+  zp_nettransthread.cpp
+  zp_pipeline.cpp
+  zp_pltaskbase.cpp
+  zp_plworkingthread.cpp
+  zp_tcpserver.cpp
+  zpmainframe.cpp
+  zoompipeline_funcsvr_plugin_import.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 zpmainframe.cpp)
+  qrc_resource.cpp
+  moc_databaseresource.cpp
+  moc_dialogaddressinput.cpp
+  moc_st_client_table.cpp
+  moc_st_clientnode_applayer.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 Release\moc_st_client_table.cpp)
+  moc_st_clientnode_basetrans.cpp
+  moc_st_cross_svr_node.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 Release\moc_st_cross_svr_node.cpp)
+  moc_st_logger.cpp
+  moc_zp_clusternode.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 Release\moc_zp_clusternode.cpp)
+  moc_zp_clusterterm.cpp
+  moc_zp_net_threadpool.cpp
+  moc_zp_netlistenthread.cpp
+  moc_zp_nettransthread.cpp
+  moc_zp_pipeline.cpp
+  moc_zp_pltaskbase.cpp
+  moc_zp_plworkingthread.cpp
+  moc_zp_tcpserver.cpp
+  moc_zpmainframe.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 Release\moc_zpmainframe.cpp)
+  http_parser.c
+  ZoomPipeline_FuncSvr.vcxproj -> E:\Qt\zpserver-master\ZoomPipeline_FuncSvr\release\ZoomPipeline_FuncSvr.exe

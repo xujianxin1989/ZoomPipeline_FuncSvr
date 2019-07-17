@@ -1,0 +1,32 @@
+﻿  Moc'ing smartlink\st_clientnode_basetrans.h...
+  Moc'ing pipeline\zp_pipeline.h...
+  moc_st_client_table.cpp
+  moc_st_clientnode_applayer.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 Debug\moc_st_client_table.cpp)
+  moc_st_clientnode_basetrans.cpp
+  moc_zp_clusterterm.cpp
+  moc_zp_pipeline.cpp
+  moc_zpmainframe.cpp
+  zp_clusternode.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 cluster\zp_clusternode.cpp)
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 Debug\moc_zpmainframe.cpp)
+  zp_clusterterm.cpp
+  main.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 cluster\zp_clusterterm.cpp)
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 main.cpp)
+  zp_pipeline.cpp
+  zp_plworkingthread.cpp
+  st_client_table.cpp
+  st_clientnode_app_imp.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 smartlink\st_client_table.cpp)
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 smartlink\st_clientnode_app_imp.cpp)
+  st_clientnode_applayer.cpp
+  st_clientnode_basetrans.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 smartlink\st_clientnode_applayer.cpp)
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 smartlink\st_clientnode_basetrans.cpp)
+  st_cross_svr_node.cpp
+  zpmainframe.cpp
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 smartlink\st_cross_svr_node.cpp)
+e:\qt\zpserver-master\zoompipeline_funcsvr\cluster\http_packet_format.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 zpmainframe.cpp)
+  ZoomPipeline_FuncSvr.vcxproj -> E:\Qt\zpserver-master\ZoomPipeline_FuncSvr\debug\ZoomPipeline_FuncSvr.exe
+  ZoomPipeline_FuncSvr.vcxproj -> debug\ZoomPipeline_FuncSvr.pdb (Full PDB)
