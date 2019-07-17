@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="database\databaseresource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogaddressinput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http-parser\http_parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="smartlink\st_client_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="smartlink\st_clientnode_app_imp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="smartlink\st_clientnode_applayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="smartlink\st_clientnode_basetrans.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="smartlink\st_cross_svr_node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logger\st_logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\zp_clusternode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\zp_clusterterm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\zp_net_threadpool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\zp_netlistenthread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\zp_nettransthread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pipeline\zp_pipeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pipeline\zp_pltaskbase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pipeline\zp_plworkingthread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\zp_tcpserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zpmainframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\zoompipeline_funcsvr_plugin_import.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cluster\cross_svr_messages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="database\databaseresource.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialogaddressinput.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="cluster\http_packet_format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http-parser\http_parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\ssl_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="smartlink\st_client_table.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="smartlink\st_clientnode_applayer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="smartlink\st_clientnode_basetrans.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="smartlink\st_cross_svr_msg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="smartlink\st_cross_svr_node.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="logger\st_logger.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="smartlink\st_message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="smartlink\st_msg_applayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="cluster\zp_clusternode.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="cluster\zp_clusterterm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="network\zp_net_threadpool.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="network\zp_netlistenthread.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="network\zp_nettransthread.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="pipeline\zp_pipeline.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="pipeline\zp_pltaskbase.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="pipeline\zp_plworkingthread.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="network\zp_tcpserver.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="zpmainframe.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="ui_dialogaddressinput.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_zpmainframe.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ZoomPipeline_FuncSvr_zh_CN.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="dialogaddressinput.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="zpmainframe.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="(1).png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="(13).png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="(27).png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="(28).png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="(29).png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\+_Sign.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\+_Sign_Alt.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="-No">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\0062.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="009.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\0098.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\010-3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\0104.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\0109.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\0126.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\019-1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\019-3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\033-1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\049-1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\0_9.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\10-3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\165c,">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="180c.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\19-1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="250,">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="275.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\27_Martin.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\3018.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\37.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\3floppy_mount-1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\3floppy_mount-2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\3floppy_mount-3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\3floppy_mount.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\3floppy_unmount-1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\3floppy_unmount-2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\3floppy_unmount-3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\3floppy_unmount-4.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\3floppy_unmount.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\4003.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\4011.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\4013.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\4018.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\4021.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\A-1">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Alienware">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\BackUp-4.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Backup-1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Backup">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Battery">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Blizzard17.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Blueberry.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Bmp.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Bondi-1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Bondi.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Burn">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="CD-1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Charged.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Classic,">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Classic.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Classic">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Color,">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Color">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Crystal_folder09.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Crystal_folder10.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Crystal_folder18.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Crystal_folder19.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Digital">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\DimageViewer.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Folder">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Grape.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Graphite-1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Graphite.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Green.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Image">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Indigo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Lemon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Lime.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Online">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Performa">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Reverse.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ruby.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Sage.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Silver">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Strawberry.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Tangerine.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Titanium.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\_40Icon">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="aqua.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\bluetooth256.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="charge.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\cn1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\cn10.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\cn11.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\cn12.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\cn13.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\cn2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\cn3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\cn4.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\cn5.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\cn6.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\cn7.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\cn8.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\cn9.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\coffee.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="drive.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\hanukkah_03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Font\myriadsetpro-semibold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="resource.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="Resources\terminalserver.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

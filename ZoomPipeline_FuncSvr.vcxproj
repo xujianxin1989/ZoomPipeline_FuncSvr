@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{117AA109-6CAB-3D09-8D03-285867D1CDA5}</ProjectGuid>
+    <RootNamespace>ZoomPipeline_FuncSvr</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>ZoomPipeline_FuncSvr</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>ZoomPipeline_FuncSvr</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ZoomPipeline_FuncSvr</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ZoomPipeline_FuncSvr</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;..\..\Qt5.8.0_MSVC2015_Static\include;..\..\Qt5.8.0_MSVC2015_Static\include\QtWidgets;..\..\Qt5.8.0_MSVC2015_Static\include\QtGui;..\..\Qt5.8.0_MSVC2015_Static\include\QtNetwork;..\..\Qt5.8.0_MSVC2015_Static\include\QtSql;..\..\Qt5.8.0_MSVC2015_Static\include\QtXml;..\..\Qt5.8.0_MSVC2015_Static\include\QtCore;debug;..\..\Qt5.8.0_MSVC2015_Static\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>E:\Qt\Qt5.8.0_MSVC2015_Static\lib\qtmaind.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5Widgetsd.lib;uxtheme.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5Xmld.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\platforms\qwindowsd.lib;dwmapi.lib;winspool.lib;imm32.lib;oleaut32.lib;opengl32.lib;shlwapi.lib;shell32.lib;rpcrt4.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5EventDispatcherSupportd.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5AccessibilitySupportd.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5FontDatabaseSupportd.lib;ole32.lib;gdi32.lib;user32.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5ThemeSupportd.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\qtfreetyped.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qgifd.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qicnsd.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qicod.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qjpegd.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qtgad.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qtiffd.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qwbmpd.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qwebpd.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5Guid.lib;comdlg32.lib;oleaut32.lib;imm32.lib;winmm.lib;glu32.lib;opengl32.lib;gdi32.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\qtlibpngd.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\qtharfbuzzd.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\bearer\qgenericbearerd.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\bearer\qnativewifibearerd.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5Networkd.lib;dnsapi.lib;iphlpapi.lib;advapi32.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\sqldrivers\qsqlited.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\sqldrivers\qsqlodbcd.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5Sqld.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5Cored.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;mpr.lib;winmm.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\qtpcred.lib;odbc32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\Qt\Qt5.8.0_MSVC2015_Static\lib;$(QTDIR)\lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\platforms;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\bearer;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\sqldrivers;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\ZoomPipeline_FuncSvr.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_XML_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <QTDIR>E:\Qt\Qt5.8.0_MSVC2015_Static</QTDIR>
+      <InputFile>%(FullPath)</InputFile>
+      <OutputFile>$(Configuration)\moc_%(Filename).cpp</OutputFile>
+      <Define>UNICODE;$(Platform);QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_XML_LIB;QT_CORE_LIB</Define>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <IncludePath>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;E:/Qt/Qt5.8.0_MSVC2015_Static/mkspecs/$(Platform)-msvc2015;.;E:/Qt/Qt5.8.0_MSVC2015_Static/include;E:/Qt/Qt5.8.0_MSVC2015_Static/include/QtWidgets;E:/Qt/Qt5.8.0_MSVC2015_Static/include/QtGui;E:/Qt/Qt5.8.0_MSVC2015_Static/include/QtNetwork;E:/Qt/Qt5.8.0_MSVC2015_Static/include/QtSql;E:/Qt/Qt5.8.0_MSVC2015_Static/include/QtXml;E:/Qt/Qt5.8.0_MSVC2015_Static/include/QtCore;D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE;D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE;C:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\winrt</IncludePath>
+    </QtMoc>
+    <QtRcc>
+      <OutputFile>$(Configuration)\qrc_%(Filename).cpp</OutputFile>
+      <QTDIR>E:\Qt\Qt5.8.0_MSVC2015_Static</QTDIR>
+      <InitFuncName>resource</InitFuncName>
+      <InputFile>%(FullPath)</InputFile>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <Compression>default</Compression>
+    </QtRcc>
+    <QtUic>
+      <QTDIR>E:\Qt\Qt5.8.0_MSVC2015_Static</QTDIR>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <InputFile>%(FullPath)</InputFile>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;..\..\Qt5.8.0_MSVC2015_Static\include;..\..\Qt5.8.0_MSVC2015_Static\include\QtWidgets;..\..\Qt5.8.0_MSVC2015_Static\include\QtGui;..\..\Qt5.8.0_MSVC2015_Static\include\QtNetwork;..\..\Qt5.8.0_MSVC2015_Static\include\QtSql;..\..\Qt5.8.0_MSVC2015_Static\include\QtXml;..\..\Qt5.8.0_MSVC2015_Static\include\QtCore;release;..\..\Qt5.8.0_MSVC2015_Static\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_XML_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>E:\Qt\Qt5.8.0_MSVC2015_Static\lib\qtmain.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5Widgets.lib;uxtheme.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5Xml.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\platforms\qwindows.lib;dwmapi.lib;winspool.lib;imm32.lib;oleaut32.lib;opengl32.lib;shlwapi.lib;shell32.lib;rpcrt4.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5EventDispatcherSupport.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5AccessibilitySupport.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5FontDatabaseSupport.lib;ole32.lib;gdi32.lib;user32.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5ThemeSupport.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\qtfreetype.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qgif.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qicns.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qico.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qjpeg.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qtga.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qtiff.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qwbmp.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats\qwebp.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5Gui.lib;comdlg32.lib;oleaut32.lib;imm32.lib;winmm.lib;glu32.lib;opengl32.lib;gdi32.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\qtlibpng.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\qtharfbuzz.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\bearer\qgenericbearer.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\bearer\qnativewifibearer.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5Network.lib;dnsapi.lib;iphlpapi.lib;advapi32.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\sqldrivers\qsqlite.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\sqldrivers\qsqlodbc.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5Sql.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\Qt5Core.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;mpr.lib;winmm.lib;E:\Qt\Qt5.8.0_MSVC2015_Static\lib\qtpcre.lib;odbc32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\Qt\Qt5.8.0_MSVC2015_Static\lib;$(QTDIR)\lib;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\platforms;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\imageformats;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\bearer;E:\Qt\Qt5.8.0_MSVC2015_Static\plugins\sqldrivers;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\ZoomPipeline_FuncSvr.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <QTDIR>E:\Qt\Qt5.8.0_MSVC2015_Static</QTDIR>
+      <InputFile>%(FullPath)</InputFile>
+      <OutputFile>$(Configuration)\moc_%(Filename).cpp</OutputFile>
+      <Define>UNICODE;$(Platform);QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_XML_LIB;QT_CORE_LIB</Define>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <IncludePath>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;E:/Qt/Qt5.8.0_MSVC2015_Static/mkspecs/$(Platform)-msvc2015;.;E:/Qt/Qt5.8.0_MSVC2015_Static/include;E:/Qt/Qt5.8.0_MSVC2015_Static/include/QtWidgets;E:/Qt/Qt5.8.0_MSVC2015_Static/include/QtGui;E:/Qt/Qt5.8.0_MSVC2015_Static/include/QtNetwork;E:/Qt/Qt5.8.0_MSVC2015_Static/include/QtSql;E:/Qt/Qt5.8.0_MSVC2015_Static/include/QtXml;E:/Qt/Qt5.8.0_MSVC2015_Static/include/QtCore;D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE;D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE;C:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\winrt</IncludePath>
+    </QtMoc>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <Compression>default</Compression>
+      <InitFuncName>resource</InitFuncName>
+      <QTDIR>E:\Qt\Qt5.8.0_MSVC2015_Static</QTDIR>
+      <OutputFile>$(Configuration)\qrc_%(Filename).cpp</OutputFile>
+      <InputFile>%(FullPath)</InputFile>
+    </QtRcc>
+    <QtUic>
+      <QTDIR>E:\Qt\Qt5.8.0_MSVC2015_Static</QTDIR>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <InputFile>%(FullPath)</InputFile>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="database\databaseresource.cpp" />
+    <ClCompile Include="dialogaddressinput.cpp" />
+    <ClCompile Include="http-parser\http_parser.c" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="smartlink\st_client_table.cpp" />
+    <ClCompile Include="smartlink\st_clientnode_app_imp.cpp" />
+    <ClCompile Include="smartlink\st_clientnode_applayer.cpp" />
+    <ClCompile Include="smartlink\st_clientnode_basetrans.cpp" />
+    <ClCompile Include="smartlink\st_cross_svr_node.cpp" />
+    <ClCompile Include="logger\st_logger.cpp" />
+    <ClCompile Include="cluster\zp_clusternode.cpp" />
+    <ClCompile Include="cluster\zp_clusterterm.cpp" />
+    <ClCompile Include="network\zp_net_threadpool.cpp" />
+    <ClCompile Include="network\zp_netlistenthread.cpp" />
+    <ClCompile Include="network\zp_nettransthread.cpp" />
+    <ClCompile Include="pipeline\zp_pipeline.cpp" />
+    <ClCompile Include="pipeline\zp_pltaskbase.cpp" />
+    <ClCompile Include="pipeline\zp_plworkingthread.cpp" />
+    <ClCompile Include="network\zp_tcpserver.cpp" />
+    <ClCompile Include="zpmainframe.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cluster\cross_svr_messages.h" />
+    <QtMoc Include="database\databaseresource.h">
+    </QtMoc>
+    <QtMoc Include="dialogaddressinput.h">
+    </QtMoc>
+    <ClInclude Include="cluster\http_packet_format.h" />
+    <ClInclude Include="http-parser\http_parser.h" />
+    <ClInclude Include="network\ssl_config.h" />
+    <QtMoc Include="smartlink\st_client_table.h">
+    </QtMoc>
+    <QtMoc Include="smartlink\st_clientnode_applayer.h">
+    </QtMoc>
+    <QtMoc Include="smartlink\st_clientnode_basetrans.h">
+    </QtMoc>
+    <ClInclude Include="smartlink\st_cross_svr_msg.h" />
+    <QtMoc Include="smartlink\st_cross_svr_node.h">
+    </QtMoc>
+    <QtMoc Include="logger\st_logger.h">
+    </QtMoc>
+    <ClInclude Include="smartlink\st_message.h" />
+    <ClInclude Include="smartlink\st_msg_applayer.h" />
+    <QtMoc Include="cluster\zp_clusternode.h">
+    </QtMoc>
+    <QtMoc Include="cluster\zp_clusterterm.h">
+    </QtMoc>
+    <QtMoc Include="network\zp_net_threadpool.h">
+    </QtMoc>
+    <QtMoc Include="network\zp_netlistenthread.h">
+    </QtMoc>
+    <QtMoc Include="network\zp_nettransthread.h">
+    </QtMoc>
+    <QtMoc Include="pipeline\zp_pipeline.h">
+    </QtMoc>
+    <QtMoc Include="pipeline\zp_pltaskbase.h">
+    </QtMoc>
+    <QtMoc Include="pipeline\zp_plworkingthread.h">
+    </QtMoc>
+    <QtMoc Include="network\zp_tcpserver.h">
+    </QtMoc>
+    <QtMoc Include="zpmainframe.h">
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Qt5.8.0_MSVC2015_Static\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:strictStrings -Zc:throwingNew -Zi -MTd -GR -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E -Za ..\..\Qt5.8.0_MSVC2015_Static\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Qt5.8.0_MSVC2015_Static\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:strictStrings -Zc:throwingNew -O2 -MT -GR -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E -Za ..\..\Qt5.8.0_MSVC2015_Static\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="ui_dialogaddressinput.h" />
+    <ClInclude Include="ui_zpmainframe.h" />
+    <ClCompile Include=".\zoompipeline_funcsvr_plugin_import.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ZoomPipeline_FuncSvr_zh_CN.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="dialogaddressinput.ui">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_dialogaddressinput.h</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_dialogaddressinput.h</OutputFile>
+    </QtUic>
+    <QtUic Include="zpmainframe.ui">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_zpmainframe.h</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_zpmainframe.h</OutputFile>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="(1).png" />
+    <None Include="(13).png" />
+    <None Include="(27).png" />
+    <None Include="(28).png" />
+    <None Include="(29).png" />
+    <None Include="Resources\+_Sign.png" />
+    <None Include="Resources\+_Sign_Alt.png" />
+    <None Include="-No" />
+    <None Include="Resources\0062.png" />
+    <None Include="009.png" />
+    <None Include="Resources\0098.png" />
+    <None Include="Resources\010-3.png" />
+    <None Include="Resources\0104.png" />
+    <None Include="Resources\0109.png" />
+    <None Include="Resources\0126.png" />
+    <None Include="Resources\019-1.png" />
+    <None Include="Resources\019-3.png" />
+    <None Include="Resources\033-1.png" />
+    <None Include="Resources\049-1.png" />
+    <None Include="Resources\0_9.png" />
+    <None Include="Resources\10-3.png" />
+    <None Include="Resources\165c," />
+    <None Include="180c.png" />
+    <None Include="Resources\19-1.png" />
+    <None Include="250," />
+    <None Include="275.png" />
+    <None Include="Resources\27_Martin.png" />
+    <None Include="Resources\3018.png" />
+    <None Include="Resources\37.png" />
+    <None Include="Resources\3floppy_mount-1.png" />
+    <None Include="Resources\3floppy_mount-2.png" />
+    <None Include="Resources\3floppy_mount-3.png" />
+    <None Include="Resources\3floppy_mount.png" />
+    <None Include="Resources\3floppy_unmount-1.png" />
+    <None Include="Resources\3floppy_unmount-2.png" />
+    <None Include="Resources\3floppy_unmount-3.png" />
+    <None Include="Resources\3floppy_unmount-4.png" />
+    <None Include="Resources\3floppy_unmount.png" />
+    <None Include="Resources\4003.png" />
+    <None Include="Resources\4011.png" />
+    <None Include="Resources\4013.png" />
+    <None Include="Resources\4018.png" />
+    <None Include="Resources\4021.png" />
+    <None Include="Resources\A-1" />
+    <None Include="Resources\Alienware" />
+    <None Include="Resources\BackUp-4.png" />
+    <None Include="Resources\Backup-1.png" />
+    <None Include="Resources\Backup" />
+    <None Include="Resources\Battery" />
+    <None Include="Resources\Blizzard17.png" />
+    <None Include="Blueberry.png" />
+    <None Include="Bmp.png" />
+    <None Include="Bondi-1.png" />
+    <None Include="Bondi.png" />
+    <None Include="Resources\Burn" />
+    <None Include="CD-1.png" />
+    <None Include="Charged.png" />
+    <None Include="Classic," />
+    <None Include="Classic.png" />
+    <None Include="Classic" />
+    <None Include="Resources\Color," />
+    <None Include="Resources\Color" />
+    <None Include="Resources\Crystal_folder09.png" />
+    <None Include="Resources\Crystal_folder10.png" />
+    <None Include="Resources\Crystal_folder18.png" />
+    <None Include="Resources\Crystal_folder19.png" />
+    <None Include="Resources\Digital" />
+    <None Include="Resources\DimageViewer.png" />
+    <None Include="Resources\Folder" />
+    <None Include="Grape.png" />
+    <None Include="Graphite-1.png" />
+    <None Include="Graphite.png" />
+    <None Include="Green.png" />
+    <None Include="Image" />
+    <None Include="Indigo.png" />
+    <None Include="Lemon.png" />
+    <None Include="Lime.png" />
+    <None Include="Online" />
+    <None Include="Performa" />
+    <None Include="Reverse.png" />
+    <None Include="Ruby.png" />
+    <None Include="Sage.png" />
+    <None Include="Silver" />
+    <None Include="Strawberry.png" />
+    <None Include="Tangerine.png" />
+    <None Include="Titanium.png" />
+    <None Include="Resources\_40Icon" />
+    <None Include="aqua.png" />
+    <None Include="Resources\bluetooth256.png" />
+    <None Include="charge.png" />
+    <None Include="Resources\cn1.png" />
+    <None Include="Resources\cn10.png" />
+    <None Include="Resources\cn11.png" />
+    <None Include="Resources\cn12.png" />
+    <None Include="Resources\cn13.png" />
+    <None Include="Resources\cn2.png" />
+    <None Include="Resources\cn3.png" />
+    <None Include="Resources\cn4.png" />
+    <None Include="Resources\cn5.png" />
+    <None Include="Resources\cn6.png" />
+    <None Include="Resources\cn7.png" />
+    <None Include="Resources\cn8.png" />
+    <None Include="Resources\cn9.png" />
+    <None Include="Resources\coffee.png" />
+    <None Include="drive.png" />
+    <None Include="Resources\hanukkah_03.png" />
+    <None Include="Font\myriadsetpro-semibold.ttf" />
+    <QtRcc Include="resource.qrc">
+    </QtRcc>
+    <None Include="Resources\terminalserver.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Qt5Version_x0020_Win32="Qt5.8.0MSVC2015_x86_Static" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
